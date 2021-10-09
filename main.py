@@ -1,4 +1,4 @@
-from flask import Flask,jsonify
+from flask import Flask,jsonify,render_template
 from geopy.geocoders import Nominatim
 from flask_cors import CORS
 
@@ -13,4 +13,4 @@ def hello_world(place):
 
 @app.route("/")
 def index():
-    return "LatLong is a latitude and longitude finding api."
+    return render_template('hello.html')
