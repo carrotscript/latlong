@@ -10,3 +10,7 @@ def hello_world(place):
     geolocator = Nominatim(user_agent="greatlygravitate")
     location = geolocator.geocode(str(place))
     return jsonify(str(location.latitude) + "," + str(location.longitude))
+
+@app.route("/")
+def index():
+    return "LatLong is a latitude and longitude finding api."
