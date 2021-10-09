@@ -1,7 +1,9 @@
 from flask import Flask,jsonify
 from geopy.geocoders import Nominatim
+from flask_cors import CORS
 
 app = Flask(__name__)
+cors = CORS(app)
 
 @app.route("/<place>")
 def hello_world(place):
