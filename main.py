@@ -17,5 +17,5 @@ def index():
         
 This is LatLong API.<br>
 This api is meant for finding the Latitude and Longitutde of a location.<br>
-Start by typing a address like this: <code>https://latlong.pythonanywhere.com/{location}</code>
+Start by typing a address like this: <code>https://latlong.pythonanywhere.com/find/{location}</code>
     """
